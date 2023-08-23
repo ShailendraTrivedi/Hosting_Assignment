@@ -18,7 +18,7 @@ app.use("/filter", fetchByType);
 /** Static Files */
 app.use(express.static(path.join(__dirname, "./assignment/build")));
 app.get("*",(req,res)=>{
-return res.sendFile(path.join(__dirname,"./assignment//build/index.html"))
+return res.sendFile(path.join(__dirname,"./assignment/build/index.html"))
 })
 
 /** DATABASE CONNECTION */
